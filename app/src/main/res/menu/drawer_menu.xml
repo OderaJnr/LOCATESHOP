@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="PROFILE SETTING"
+            android:icon="@drawable/profile_icon"/>
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="HOME"
+            />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:title="MESSAGES"
+            android:icon="@drawable/messages"/>
+        <item
+            android:id="@+id/nav_membership"
+            android:title="PROFILE"
+            android:icon="@drawable/find_people"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:title="SETTINGS"
+            android:icon="@drawable/settings"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="LOG OUT"
+            android:icon="@drawable/logout"/>
+
+        <item
+            android:id="@+id/nav_searchvendors"
+            android:title="SEARCH VENDORS"
+            android:icon="@drawable/search"/>
+
+        <item
+            android:id="@+id/nav_users"
+            android:title="USERS"
+            android:icon="@drawable/find_people"/>
+
+
+
+    </group>
+
+</menu>

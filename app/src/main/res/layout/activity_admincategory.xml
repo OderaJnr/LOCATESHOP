@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/admin_drawer"
+    tools:context="com.example.user.locateshop.AdmincategoryActivity">
+
+
+    <Button
+        android:id="@+id/searchbtnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/constraintlayout"
+        android:layout_centerHorizontal="true"
+        android:text="search"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="694dp" />
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar_layout"
+
+            ></include>
+
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="92dp"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="624dp"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="47dp" />
+
+        <ImageView
+            android:id="@+id/gasimage"
+            android:layout_width="254dp"
+            android:layout_height="131dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline19"
+            app:srcCompat="@drawable/gas" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/darker_gray"
+            android:text="Cooking Gas "
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <ImageView
+            android:id="@+id/groceries"
+            android:layout_width="250dp"
+            android:layout_height="108dp"
+            android:layout_marginBottom="84dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:srcCompat="@drawable/groceries" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
+            android:background="@android:color/darker_gray"
+            android:text="Fresh Groceries"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="@+id/groceries"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/foodjoints"
+            android:layout_width="189dp"
+            android:layout_height="133dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="84dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:srcCompat="@drawable/food"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/foodjoints"
+            android:layout_width="143dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginStart="68dp"
+            android:background="@android:color/darker_gray"
+            android:text="Food Joints"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/guideline110"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/boutique"
+            android:layout_width="263dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/beuty"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="129dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:background="@android:color/darker_gray"
+            android:text="Boutique"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="@+id/boutique"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/fashion"
+            android:layout_width="267dp"
+            android:layout_height="129dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:src="@drawable/fashion"
+            app:layout_constraintBottom_toTopOf="@+id/guideline110"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="203dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@android:color/darker_gray"
+            android:lineSpacingExtra="18sp"
+            android:text="Fashion And Designs"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="@+id/fashion"
+            app:layout_constraintEnd_toEndOf="@+id/fashion" />
+
+        <ImageView
+            android:id="@+id/mpesa"
+            android:layout_width="284dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="48dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:src="@drawable/moneyagentss"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/darker_gray"
+            android:text="Financial Services"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="@+id/mpesa"
+            app:layout_constraintEnd_toEndOf="@+id/mpesa" />
+
+        <ImageView
+            android:id="@+id/houses"
+            android:layout_width="254dp"
+            android:layout_height="125dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/appatments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline19" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="143dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/darker_gray"
+            android:text="Vacant Houses"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="@+id/houses"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <ImageView
+            android:id="@+id/salon"
+            android:layout_width="250dp"
+            android:layout_height="121dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:src="@drawable/salon"
+            app:layout_constraintBottom_toTopOf="@+id/fashion"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@android:color/darker_gray"
+            android:text="Salon And Barbershop"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/fashion"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/pharmacy"
+            android:layout_width="258dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+
+            android:src="@drawable/pharmacy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="109dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="124dp"
+            android:background="@android:color/darker_gray"
+            android:text="Chemist"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groceries" />
+
+        <ImageView
+            android:id="@+id/generalshop"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:src="@drawable/generalshop"
+            app:layout_constraintBottom_toTopOf="@+id/salon"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textVihjew8"
+            android:layout_width="139dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:background="@android:color/darker_gray"
+            android:text="General Shop"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/salon"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="General Shop" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/drawer_menu"
+
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

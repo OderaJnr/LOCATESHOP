@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PoliceActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.0" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline178"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="551dp"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="551dp"
+        app:layout_constraintGuide_percent="1.0" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="598dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/colorAccent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline178"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/customerInfo"
+            android:layout_width="534dp"
+            android:layout_height="147dp"
+            android:background="@color/colorAccent"
+            android:gravity="bottom"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/customerprofileimage"
+                android:layout_width="162dp"
+                android:layout_height="170dp"
+                android:padding="20sp"
+                android:visibility="visible"
+                android:src="@drawable/profile" />
+
+            <LinearLayout
+                android:layout_width="356dp"
+                android:layout_height="147dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:paddingLeft="40sp">
+
+                <TextView
+                    android:id="@+id/customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp" />
+
+                <TextView
+                    android:id="@+id/customerPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp" />
+
+
+                <TextView
+                    android:id="@+id/customerlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="598dp"
+        android:layout_height="712dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        map:layout_constraintBottom_toTopOf="@+id/guideline20"
+        map:layout_constraintStart_toStartOf="parent"
+        tools:context=".PoliceActivity"
+        tools:ignore="MissingConstraints" />
+
+    <Switch
+        android:id="@+id/driverworking"
+        android:layout_width="400dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:checked="true"
+        android:textOff="VENDOR NOT WORKING"
+        android:textOn="VENDOR  WORKING"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:checked="true" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.locateshop.PersonprofileActivity">
+
+    <include
+        android:id="@+id/personprofile_page_toolbar"
+        layout="@layout/app_bar_layout"
+
+        ></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_profile_pic"
+                android:layout_width="277dp"
+                android:layout_height="221dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="77dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/person_full_name"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/person_profile_pic"
+                android:layout_marginTop="5dp"
+                android:text="Profile Name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/person_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_full_name"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/sellinggg"
+                android:text="   Status"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/person_Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_profile_status"
+                android:layout_marginTop="5dp"
+                android:text="   Location"
+                android:drawableLeft="@drawable/placeholder"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/person_Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_Location"
+                android:layout_marginTop="5dp"
+                android:text="   Phone no."
+                android:drawableLeft="@drawable/calll"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:id="@+id/person_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_Phone"
+                android:drawableLeft="@drawable/emaill"
+                android:layout_marginTop="5dp"
+                android:text="   Email"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/person_Website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_Email"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/websiteee"
+                android:text="   Website"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:typeface="serif" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/send_friend_requestbtn"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="201dp"
+        android:textStyle="bold"
+        android:background="@drawable/buttons_background"
+        android:text="FOLLOW" />
+
+    <Button
+        android:id="@+id/cancelrequest"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginBottom="131dp"
+        android:background="@drawable/buttons_background"
+        android:text="Decline Follow Request" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="339dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/buttons_background"
+        android:text="Visit Shop" />
+
+
+</RelativeLayout>

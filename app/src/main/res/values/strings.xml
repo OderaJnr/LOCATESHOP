@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LOCATESHOP</string>
+    <string name="title_activity_vgas">Map</string>
+    <string name="title_activity_ugas">Map</string>
+    <string name="title_activity_usergas">Map</string>
+</resources>

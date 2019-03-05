@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.locateshop.ProductsearchActivity">
+    <include
+        android:id="@+id/searchproduct_page_toolbar"
+        layout="@layout/app_bar_layout"
+
+        ></include>
+
+    <RelativeLayout
+        android:id="@+id/mylayout"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="49dp">
+
+
+        <EditText
+            android:id="@+id/search_product"
+            style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="397dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="21dp"
+            android:drawableLeft="@drawable/search"
+            android:ems="10"
+            android:hint="Search by product name..."
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            tools:background="?android:attr/colorButtonNormal" />
+
+        <ImageButton
+            android:id="@+id/search_productbtn"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/search_product"
+            android:layout_marginEnd="58dp"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/switchsearch2"
+            android:layout_width="277dp"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="68dp"
+            android:layout_marginStart="107dp"
+            android:text="Tap here to search by  Username"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mylayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-46dp"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
+
+

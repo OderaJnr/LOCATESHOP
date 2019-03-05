@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerMain"
+
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraintlayput"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/uproffesionalbtn"
+            android:layout_width="177dp"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/uhotel"
+            android:layout_marginBottom="152dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="PROFFESIONAL SERVICES"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/bodaboda"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/ugasbtn"
+            android:layout_marginLeft="392dp"
+            android:layout_marginStart="392dp"
+            android:layout_marginTop="44dp"
+            android:text="SEARCH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/umoneybtn" />
+
+        <Button
+            android:id="@+id/uretail"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/ugasbtn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:text="SHOPING AND RETAIL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uhotel" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.25" />
+
+
+        <Button
+            android:id="@+id/ufoodbn"
+            android:layout_width="174dp"
+            android:layout_height="64dp"
+            android:layout_alignStart="@+id/uhotel"
+            android:layout_alignTop="@+id/umoneybtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:text="FOOD AND GROCERY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <Button
+            android:id="@+id/uhousesbtn"
+            android:layout_width="175dp"
+            android:layout_height="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/uentertainmentbtn"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="VACANT HOUSES"
+            app:layout_constraintBottom_toTopOf="@+id/guideline12"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/uchemistbtn"
+            android:layout_width="177dp"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/uhotel"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="MEDICAL AND HEALTH"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/ufashionbtn"
+            android:layout_width="169dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="32dp"
+            android:text="CLOTHING AND APPAREL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <Button
+            android:id="@+id/umoneybtn"
+            android:layout_width="169dp"
+            android:layout_height="58dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/uentertainmentbtn"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:text="MONEY  TRANSFER AGENTS"
+            app:layout_constraintBottom_toTopOf="@+id/guideline10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/ugasbtn"
+            android:layout_width="170dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="GAS SUPLIERS"
+            app:layout_constraintBottom_toTopOf="@+id/guideline12"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/usalonbtn"
+            android:layout_width="162dp"
+            android:layout_height="61dp"
+            android:layout_alignBaseline="@+id/ugasbtn"
+            android:layout_alignStart="@+id/uentertainmentbtn"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:text="BEUTY,SALON AND SPA"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/uentertainmentbtn"
+            android:layout_width="169dp"
+            android:layout_height="62dp"
+            android:layout_alignStart="@+id/ufashionbtn"
+            android:layout_alignTop="@+id/uchemistbtn"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="28dp"
+            android:text="ENTERTAINMENT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <Button
+            android:id="@+id/uhotel"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/ugasbtn"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:text="HOTEL AND LODGING"
+            app:layout_constraintBottom_toTopOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/drawer_menu"
+
+        ></android.support.design.widget.NavigationView>
+
+
+
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
